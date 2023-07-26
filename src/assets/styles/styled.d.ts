@@ -1,0 +1,19 @@
+import 'styled-components';
+
+declare module 'styled-components' {
+  export interface DefaultTheme {
+    breakpoints: {
+      mobile: string;
+      desktop: string;
+    };
+    colors: {
+      background: string;
+      content_background: string;
+      card_background: string;
+      nav_background: string;
+      primary_text: string;
+      secondary_text: string;
+      highlight: string;
+    },
+  }
+}

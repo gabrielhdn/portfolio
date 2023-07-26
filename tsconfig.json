@@ -24,5 +24,6 @@
     ".eslintrc.cjs",
     "src"
   ],
+  "files": ["src/assets/styles/styled.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
