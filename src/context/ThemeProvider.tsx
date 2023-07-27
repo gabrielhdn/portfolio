@@ -1,25 +1,15 @@
+import { useCallback, useMemo } from 'react';
 import { DefaultTheme } from 'styled-components';
-import {
-  createContext, useCallback, useContext, useMemo,
-} from 'react';
 
+import { ThemeContext } from './ThemeContext';
 import usePersistedTheme from '../hooks/usePersistedTheme';
 import themes from '../assets/styles/themes';
 
-interface IThemeContext {
-  theme: DefaultTheme,
-  handleToggleTheme: () => void,
-}
-
-interface Props {
+export interface Props {
   children: React.ReactNode;
 }
 
-const ThemeContext = createContext<IThemeContext>({} as IThemeContext);
-
-export const useTheme = () => useContext(ThemeContext);
-
-export function ThemeProvider({ children }: Props) {
+function ThemeProvider({ children }: Props) {
   const [theme, setTheme] = usePersistedTheme<DefaultTheme>('theme', themes.dark);
 
   const handleToggleTheme = useCallback(() => {
@@ -34,3 +24,5 @@ export function ThemeProvider({ children }: Props) {
     </ThemeContext.Provider>
   );
 }
+
+export default ThemeProvider;
