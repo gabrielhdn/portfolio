@@ -1,12 +1,13 @@
 import { ThemeProvider } from 'styled-components';
+import { useTheme } from '../../context/ThemeContext';
 import GlobalStyles from '../../assets/styles/global';
-
 import Router from '../../Router';
-import themes from '../../assets/styles/themes';
 
 function App() {
+  const { theme } = useTheme();
+
   return (
-    <ThemeProvider theme={themes.dark}>
+    <ThemeProvider theme={theme}>
       <GlobalStyles />
 
       <Router />

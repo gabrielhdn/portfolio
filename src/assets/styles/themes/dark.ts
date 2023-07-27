@@ -2,6 +2,7 @@ import common from './common';
 
 export default {
   ...common,
+  title: 'dark',
   colors: {
     background: '#0E0D0B',
     content_background: '#25252D30',

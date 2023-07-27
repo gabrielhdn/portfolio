@@ -6,6 +6,7 @@ declare module 'styled-components' {
       mobile: string;
       desktop: string;
     };
+    title: string;
     colors: {
       background: string;
       content_background: string;
@@ -14,6 +15,6 @@ declare module 'styled-components' {
       primary_text: string;
       secondary_text: string;
       highlight: string;
-    },
+    };
   }
 }
