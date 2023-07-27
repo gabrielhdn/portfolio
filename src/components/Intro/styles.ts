@@ -5,7 +5,7 @@ export const Container = styled(motion.div)`
   background: #1A1A1A;
   position: absolute;
   inset: 0;
-  z-index: 1;
+  z-index: 10;
 
   display: flex;
   align-items: center;

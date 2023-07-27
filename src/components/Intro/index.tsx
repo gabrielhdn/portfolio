@@ -1,14 +1,13 @@
 import { useEffect, useState } from 'react';
-import { slideUp } from '../../utils/animations';
 import gif from '../../assets/gifs/intro.gif';
 import * as S from './styles';
 
 const Intro = () => {
-  const [stopGif, setStopGif] = useState<boolean>(false);
+  const [gifAnimation, setGifAnimation] = useState<boolean>(true);
 
   useEffect(() => {
     const id = setTimeout(() => {
-      setStopGif(true);
+      setGifAnimation(false);
     }, 2000);
 
     return () => clearTimeout(id);
@@ -16,11 +15,11 @@ const Intro = () => {
 
   return (
     <S.Container
-      variants={slideUp}
-      exit="exit"
+      exit={{ y: '-100vh' }}
+      transition={{ ease: 'easeIn', duration: '.6' }}
     >
       {/* Math.random() forces the browser to re-download the gif on page refresh */}
-      {!stopGif && <img src={`${gif}?${Math.random()}`} alt="Intro Animation" />}
+      {gifAnimation && <img src={`${gif}?${Math.random()}`} alt="Intro Animation" />}
     </S.Container>
   );
 };
