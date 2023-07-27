@@ -3,9 +3,8 @@ import { motion } from 'framer-motion';
 
 export const Container = styled(motion.div)`
   background: #1A1A1A;
-  position: absolute;
-  inset: 0;
-  z-index: 10;
+  width: 100%;
+  height: 100vh;
 
   display: flex;
   align-items: center;

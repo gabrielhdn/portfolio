@@ -6,7 +6,7 @@ export interface IButton {
 export const buttons: IButton[] = [
   {
     label: 'home',
-    link: '/home',
+    link: '/',
   },
   {
     label: 'projects',

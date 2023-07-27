@@ -26,10 +26,10 @@ const App: React.FC = () => {
       <GlobalStyles />
       <Container>
         <AnimatePresence mode="wait">
-          {introAnimation && <Intro />}
+          {introAnimation
+            ? <Intro key="intro" />
+            : <Router key="router" /> }
         </AnimatePresence>
-
-        <Router />
       </Container>
     </ThemeProvider>
   );

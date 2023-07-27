@@ -7,7 +7,7 @@ import Projects from './pages/Projects';
 import Skills from './pages/Skills';
 import About from './pages/About';
 
-function Router() {
+const Router = () => {
   const routes = useRoutes([
     { path: '/', element: <Home /> },
     { path: '/projects', element: <Projects /> },
@@ -24,6 +24,6 @@ function Router() {
       {cloneElement(routes, { key: pathname })}
     </AnimatePresence>
   );
-}
+};
 
 export default Router;

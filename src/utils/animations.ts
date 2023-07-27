@@ -18,6 +18,6 @@ export const fadeIn = {
   },
   visible: {
     opacity: 1,
-    transition: { duration: 1, delay: 3 },
+    transition: { duration: 1 },
   },
 };
