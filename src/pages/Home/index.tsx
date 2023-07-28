@@ -1,3 +1,5 @@
+import BGParticles from '../../components/BGParticles';
+import Switch from '../../components/Switch';
 import useMobileHeightFix from '../../hooks/useMobileHeightFix';
 import * as S from './styles';
 
@@ -11,7 +13,12 @@ const Home: React.FC = () => {
       transition={{ duration: 1 }}
       ref={containerRef}
     >
+      <BGParticles />
       Home
+
+      <div className="switch">
+        <Switch />
+      </div>
     </S.Container>
   );
 };

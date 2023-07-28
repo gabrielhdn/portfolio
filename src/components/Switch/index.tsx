@@ -6,7 +6,7 @@ import sun from '../../assets/images/sun.svg';
 import moon from '../../assets/images/moon.svg';
 import * as S from './styles';
 
-const Switch = () => {
+const Switch: React.FC = () => {
   const { theme, handleToggleTheme } = useTheme();
 
   return (
