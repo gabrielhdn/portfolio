@@ -11,10 +11,31 @@ interface IOrigins {
 
 const origins: IOrigins = {
   header: css`
-    /* padding: .5rem; */
+    span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 1.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+    position: relative;
+  }
   `,
   home: css``,
-  projects: css``,
+  projects: css`
+    border: 1px solid ${({ theme }) => theme.colors.highlight};
+    color: ${({ theme }) => theme.colors.highlight};
+    padding: .5rem;
+    font-weight: 500;
+    font-size: 1rem;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  `,
 };
 
 export const Button = styled.button<IButton>`
@@ -28,19 +49,8 @@ export const Button = styled.button<IButton>`
   text-transform: uppercase;
   cursor: pointer;
 
-  span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 500;
-  }
-
   ${({ origin, selected }) => origin === 'header' && css`
     span {
-      position: relative;
-      height: 1.5rem;
-      font-size: 1rem;
-
       &::before {
         content: '';
         position: absolute;
