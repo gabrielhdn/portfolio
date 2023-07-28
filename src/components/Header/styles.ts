@@ -1,13 +1,8 @@
 import { motion } from 'framer-motion';
-import { Link, LinkProps } from 'react-router-dom';
 import styled, { css } from 'styled-components';
 
 interface INavigation {
   open: boolean;
-}
-
-interface INavIcon extends LinkProps {
-  selected?: boolean;
 }
 
 export const Container = styled(motion.header)`
@@ -51,8 +46,6 @@ export const Navigation = styled.nav<INavigation>`
   .link-container {
     display: flex;
     gap: 2rem;
-    font-weight: 500;
-    font-size: .9rem;
   }
 
   @media(max-width: 1000px) {
@@ -92,30 +85,30 @@ export const Navigation = styled.nav<INavigation>`
   }
 `;
 
-export const NavIcon = styled(Link)<INavIcon>`
-  padding: .5rem;
-  cursor: auto;
+// export const NavIcon = styled(Link)<INavIcon>`
+//   padding: .5rem;
+//   cursor: auto;
 
-  span {
-    position: relative;
-    text-transform: uppercase;
-    cursor: pointer;
+//   span {
+//     position: relative;
+//     text-transform: uppercase;
+//     cursor: pointer;
 
-    &::before {
-      content: '';
-      position: absolute;
-      bottom: -5px;
-      left: 0;
+//     &::before {
+//       content: '';
+//       position: absolute;
+//       bottom: -5px;
+//       left: 0;
 
-      height: 1px;
-      width: 100%;
-      background-color: ${({ theme }) => theme.colors.highlight};
-      transition: .3s;
-      transform: ${({ selected }) => (selected ? 'scaleX(1)' : 'scaleX(0)')};
-    }
+//       height: 1px;
+//       width: 100%;
+//       background-color: ${({ theme }) => theme.colors.highlight};
+//       transition: .3s;
+//       transform: ${({ selected }) => (selected ? 'scaleX(1)' : 'scaleX(0)')};
+//     }
 
-    &:hover::before {
-      transform: scaleX(1);
-    }
-  }
-`;
+//     &:hover::before {
+//       transform: scaleX(1);
+//     }
+//   }
+// `;

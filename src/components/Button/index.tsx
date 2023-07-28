@@ -2,14 +2,18 @@ import * as S from './styles';
 
 interface Props {
   origin: string;
-  onClick: () => void
+  onClick: () => any;
   children: React.ReactNode;
+  selected: boolean;
 }
 
-const Button: React.FC<Props> = ({ origin, onClick, children }) => (
+const Button: React.FC<Props> = ({
+  origin, onClick, children, selected,
+}) => (
   <S.Button
     type="button"
     origin={origin}
+    selected={selected}
     onClick={onClick}
   >
     {children}
