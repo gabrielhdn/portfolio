@@ -33,7 +33,7 @@ export const Container = styled(motion.header)`
     padding: 2rem 2rem;
   }
 
-  @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media(max-width: 720px) {
     padding: 1.5rem 1.5rem;
 
     .menu-icon {
@@ -64,7 +64,7 @@ export const Navigation = styled.nav<INavigation>`
   }
 
 
-  @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media(max-width: 720px) {
     position: fixed;
     inset: 0 0 0 25%;
 

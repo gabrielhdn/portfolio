@@ -39,7 +39,7 @@ export const Container = styled.div`
                       rgba(216,68,148,1) 103.3%);
   `}
 
-  @media(min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+  @media(min-width: 1200px) {
     width: 4.7rem;
   }
 `;

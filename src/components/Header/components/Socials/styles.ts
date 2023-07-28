@@ -15,7 +15,7 @@ export const Container = styled.div`
     cursor: pointer;
   }
 
-  @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media(max-width: 720px) {
     gap: 1.2rem;
 
     svg {
