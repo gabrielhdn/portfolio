@@ -1,8 +1,11 @@
+import Header from '../../components/Header';
 import * as S from './styles';
 
 function About() {
   return (
-    <S.Container>About</S.Container>
+    <S.Container>
+      <Header />
+    </S.Container>
   );
 }
 

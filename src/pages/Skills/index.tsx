@@ -1,8 +1,11 @@
+import Header from '../../components/Header';
 import * as S from './styles';
 
 function Skills() {
   return (
-    <S.Container>Skills</S.Container>
+    <S.Container>
+      <Header />
+    </S.Container>
   );
 }
 

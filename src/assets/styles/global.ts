@@ -4,11 +4,14 @@ export default createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Montserrat', 'Poppins', sans-serif;
     scroll-behavior: smooth;
     overflow-x: hidden;
     transition: background .5s ease-in-out;
+  }
+
+  *, ::before, ::after {
+    box-sizing: border-box;
   }
 
   body {
