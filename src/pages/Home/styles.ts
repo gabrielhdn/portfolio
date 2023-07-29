@@ -50,6 +50,7 @@ export const ContentContainer = styled.div`
   font-size: 1.5rem;
 
   .introduction {
+    width: 100%;
     text-align: center;
 
     & > p:first-child {

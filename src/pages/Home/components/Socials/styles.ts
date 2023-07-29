@@ -15,7 +15,7 @@ export const Container = styled.div`
   .icons {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 
     svg {
       width: 1.25rem;
@@ -33,8 +33,6 @@ export const Container = styled.div`
     left: 5rem;
 
     .icons {
-      gap: 14px;
-
       svg {
         width: 1.4rem;
         height: 1.4rem;

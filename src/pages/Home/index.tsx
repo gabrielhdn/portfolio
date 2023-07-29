@@ -10,6 +10,7 @@ import BlackLogo from '../../assets/images/LogoBlack.svg';
 import WhiteLogo from '../../assets/images/Logo.svg';
 import * as S from './styles';
 import Socials from './components/Socials';
+// import AnimatedText from '../../components/AnimatedText';
 
 const Home: React.FC = () => {
   const containerRef = useMobileHeightFix('height');
@@ -49,6 +50,9 @@ const Home: React.FC = () => {
             herdina,
           </p>
           <p>front-end developer based in curitiba, brazil.</p>
+          {/* <AnimatedText text="welcome!" />
+          <AnimatedText text="i'm gabriel herdina," />
+          <AnimatedText text="front-end developer based in curitiba, brazil." /> */}
         </div>
 
         <IoTriangleSharp

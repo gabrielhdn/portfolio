@@ -10,7 +10,7 @@ import { useTheme } from '../../context/ThemeContext';
 import { Container } from './styles';
 
 const App: React.FC = () => {
-  const [introAnimation, setIntroAnimation] = useState<boolean>(true);
+  const [introAnimation, setIntroAnimation] = useState<boolean>(false);
   const { theme } = useTheme();
 
   useEffect(() => {
