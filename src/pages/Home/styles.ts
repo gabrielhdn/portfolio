@@ -6,6 +6,7 @@ export const Container = styled(motion.div)`
   width: 100%;
   height: 100vh;
   padding-top: 1rem;
+  overflow: hidden;
 
   display: flex;
   align-items: center;
@@ -50,7 +51,7 @@ export const ContentContainer = styled.div`
   font-size: 1.5rem;
 
   .introduction {
-    width: 100%;
+    max-width: 100%;
     text-align: center;
 
     & > p:first-child {

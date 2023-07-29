@@ -1,10 +1,10 @@
 import Button from '../../../../components/Button';
-import { springUp } from '../../../../utils/animations';
+import { slideUp } from '../../../../utils/animations';
 import * as S from './styles';
 
 const Buttons = () => (
   <S.Container
-    variants={springUp}
+    variants={slideUp}
     initial="hidden"
     animate="visible"
   >

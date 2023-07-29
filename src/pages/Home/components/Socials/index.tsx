@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 import { icons } from '../../../../utils/mediaIcons';
-import { popIcons, iconContainerAnimation, springUp } from '../../../../utils/animations';
+import { popIcons, iconContainerAnimation, slideUp } from '../../../../utils/animations';
 import * as S from './styles';
 
 const Socials = () => (
@@ -25,7 +25,7 @@ const Socials = () => (
       ))}
     </motion.div>
     <motion.span
-      variants={springUp}
+      variants={slideUp}
       initial="hidden"
       animate="visible"
       className="base"

@@ -46,7 +46,7 @@ export const popIcons = {
 export const iconContainerAnimation = {
   visible: {
     transition: {
-      delayChildren: 1.5,
+      delayChildren: 1.4,
       staggerChildren: 0.1,
     },
   },
@@ -66,6 +66,36 @@ export const springUp = {
       mass: 0.7,
       delay: 0.5,
       ease: 'easeIn',
+    },
+  },
+};
+
+export const slideLeft = {
+  hidden: {
+    x: -200,
+    opacity: 0,
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.8,
+      delay: 0.5,
+    },
+  },
+};
+
+export const slideUp = {
+  hidden: {
+    y: 200,
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.8,
+      delay: 0.5,
     },
   },
 };

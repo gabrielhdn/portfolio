@@ -1,15 +1,17 @@
 import { IoTriangleSharp } from 'react-icons/io5';
+import { motion } from 'framer-motion';
 
 import BGParticles from '../../components/BGParticles';
 import Switch from '../../components/Switch';
 import Buttons from './components/Buttons';
+import Socials from './components/Socials';
 import useMobileHeightFix from '../../hooks/useMobileHeightFix';
 import { useTheme } from '../../context/ThemeContext';
 
 import BlackLogo from '../../assets/images/LogoBlack.svg';
 import WhiteLogo from '../../assets/images/Logo.svg';
+import { fadeIn, slideLeft } from '../../utils/animations';
 import * as S from './styles';
-import Socials from './components/Socials';
 // import AnimatedText from '../../components/AnimatedText';
 
 const Home: React.FC = () => {
@@ -19,9 +21,9 @@ const Home: React.FC = () => {
 
   return (
     <S.Container
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
+      variants={fadeIn}
+      initial="hidden"
+      animate="visible"
       ref={containerRef}
     >
       <BGParticles />
@@ -40,7 +42,10 @@ const Home: React.FC = () => {
       </header>
 
       <S.ContentContainer>
-        <div className="introduction">
+        <motion.div
+          variants={slideLeft}
+          className="introduction"
+        >
           <p>welcome!</p>
           <p>
             i&apos;m
@@ -53,7 +58,7 @@ const Home: React.FC = () => {
           {/* <AnimatedText text="welcome!" />
           <AnimatedText text="i'm gabriel herdina," />
           <AnimatedText text="front-end developer based in curitiba, brazil." /> */}
-        </div>
+        </motion.div>
 
         <IoTriangleSharp
           color={title === 'dark' ? '#FFF' : '#222'}
