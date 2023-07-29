@@ -67,4 +67,8 @@ export const ContentContainer = styled.div`
   @media(min-width: 600px) {
     font-size: 2rem;
   }
+
+  @media(min-width: 1000px) {
+    min-height: 59%;
+  }
 `;
