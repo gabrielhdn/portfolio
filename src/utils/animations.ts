@@ -22,18 +22,6 @@ export const fadeIn = {
   },
 };
 
-export const arrowOpacity = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      duration: 1,
-      ease: 'easeIn',
-      repeat: Infinity,
-    },
-  },
-};
-
 export const popIcons = {
   visible: {
     scale: [0, 1.3, 1],
@@ -72,7 +60,7 @@ export const springUp = {
 
 export const slideLeft = {
   hidden: {
-    x: -200,
+    x: window.innerWidth > 1000 ? -200 : -100,
     opacity: 0,
   },
   visible: {
@@ -87,7 +75,7 @@ export const slideLeft = {
 
 export const slideUp = {
   hidden: {
-    y: 200,
+    y: window.innerWidth > 1000 ? 200 : 100,
     opacity: 0,
   },
   visible: {
@@ -97,5 +85,47 @@ export const slideUp = {
       duration: 0.8,
       delay: 0.5,
     },
+  },
+};
+
+export const pageSlideLeft = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: { duration: 0.5, delay: 0.3 },
+  },
+  exit: {
+    x: '100vw',
+    transition: { ease: 'easeInOut' },
+  },
+};
+
+export const pageSlideRight = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: { duration: 0.5, delay: 0.3 },
+  },
+  exit: {
+    x: '-100vw',
+    transition: { ease: 'easeInOut' },
+  },
+};
+
+export const pageSlideBottom = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: { duration: 0.5, delay: 0.3 },
+  },
+  exit: {
+    y: '-100vh',
+    transition: { ease: 'easeInOut' },
   },
 };
