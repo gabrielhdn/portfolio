@@ -9,6 +9,7 @@ import { useTheme } from '../../context/ThemeContext';
 import BlackLogo from '../../assets/images/LogoBlack.svg';
 import WhiteLogo from '../../assets/images/Logo.svg';
 import * as S from './styles';
+import Socials from './components/Socials';
 
 const Home: React.FC = () => {
   const containerRef = useMobileHeightFix('height');
@@ -23,6 +24,7 @@ const Home: React.FC = () => {
       ref={containerRef}
     >
       <BGParticles />
+      <Socials />
 
       <header>
         <img
@@ -56,7 +58,6 @@ const Home: React.FC = () => {
 
         <Buttons />
       </S.ContentContainer>
-
     </S.Container>
   );
 };

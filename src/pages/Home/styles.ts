@@ -43,6 +43,7 @@ export const ContentContainer = styled.div`
   gap: 3rem;
 
   min-height: 62%;
+  max-height: 27.5rem;
   width: 90%;
   max-width: 50rem;
   font-weight: 400;
