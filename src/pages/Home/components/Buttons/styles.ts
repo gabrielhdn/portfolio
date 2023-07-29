@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import styled, { keyframes } from 'styled-components';
 
 const flashAnimation = keyframes`
@@ -12,7 +13,7 @@ const flashAnimation = keyframes`
   }
 `;
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
   display: grid;
   grid-auto-flow: row;
   gap: 2rem;

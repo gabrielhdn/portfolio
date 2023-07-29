@@ -1,8 +1,13 @@
 import Button from '../../../../components/Button';
+import { springUp } from '../../../../utils/animations';
 import * as S from './styles';
 
 const Buttons = () => (
-  <S.Container>
+  <S.Container
+    variants={springUp}
+    initial="hidden"
+    animate="visible"
+  >
     <Button
       origin="home"
       onClick={() => console.log('F')}

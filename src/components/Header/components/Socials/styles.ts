@@ -1,6 +1,3 @@
-import {
-  SiGithub, SiLinkedin, SiInstagram, SiGmail,
-} from 'react-icons/si';
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -21,29 +18,5 @@ export const Container = styled.div`
       width: 1.25rem;
       height: 1.25rem;
     }
-  }
-`;
-
-export const Github = styled(SiGithub)`
-  &:hover {
-    color: ${({ $color }) => $color};
-  }
-`;
-
-export const Linkedin = styled(SiLinkedin)`
-  &:hover {
-    color: ${({ $color }) => $color};
-  }
-`;
-
-export const Instagram = styled(SiInstagram)`
-  &:hover {
-    color: ${({ $color }) => $color};
-  }
-`;
-
-export const Gmail = styled(SiGmail)`
-  &:hover {
-    color: ${({ $color }) => $color};
   }
 `;

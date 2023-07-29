@@ -29,7 +29,7 @@ export const Container = styled.div`
     background: ${({ theme }) => theme.colors.primary_text};
   }
 
-  @media(min-width: 1000px) {
+  @media(min-width: 1100px) {
     left: 5rem;
 
     .icons {
