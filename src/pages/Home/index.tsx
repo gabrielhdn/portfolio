@@ -1,5 +1,8 @@
+import { IoTriangleSharp } from 'react-icons/io5';
+
 import BGParticles from '../../components/BGParticles';
 import Switch from '../../components/Switch';
+import Buttons from './components/Buttons';
 import useMobileHeightFix from '../../hooks/useMobileHeightFix';
 import { useTheme } from '../../context/ThemeContext';
 
@@ -32,6 +35,27 @@ const Home: React.FC = () => {
           <Switch />
         </div>
       </header>
+
+      <S.ContentContainer>
+        <div className="introduction">
+          <p>welcome!</p>
+          <p>
+            i&apos;m
+            {' '}
+            <span>gabriel</span>
+            {' '}
+            herdina,
+          </p>
+          <p>front-end developer based in curitiba, brazil.</p>
+        </div>
+
+        <IoTriangleSharp
+          color={title === 'dark' ? '#FFF' : '#222'}
+          size={15}
+        />
+
+        <Buttons />
+      </S.ContentContainer>
 
     </S.Container>
   );

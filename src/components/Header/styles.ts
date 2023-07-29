@@ -80,35 +80,6 @@ export const Navigation = styled.nav<INavigation>`
       flex-direction: column;
       align-items: center;
       gap: 2.5rem;
-      font-size: 1.1rem;
     }
   }
 `;
-
-// export const NavIcon = styled(Link)<INavIcon>`
-//   padding: .5rem;
-//   cursor: auto;
-
-//   span {
-//     position: relative;
-//     text-transform: uppercase;
-//     cursor: pointer;
-
-//     &::before {
-//       content: '';
-//       position: absolute;
-//       bottom: -5px;
-//       left: 0;
-
-//       height: 1px;
-//       width: 100%;
-//       background-color: ${({ theme }) => theme.colors.highlight};
-//       transition: .3s;
-//       transform: ${({ selected }) => (selected ? 'scaleX(1)' : 'scaleX(0)')};
-//     }
-
-//     &:hover::before {
-//       transform: scaleX(1);
-//     }
-//   }
-// `;

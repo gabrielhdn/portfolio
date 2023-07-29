@@ -5,6 +5,11 @@ export const Container = styled(motion.div)`
   position: relative;
   width: 100%;
   height: 100vh;
+  padding-top: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   header {
     width: 100%;
@@ -27,5 +32,39 @@ export const Container = styled(motion.div)`
     @media(min-width: 1000px) {
       width: 10rem;
     }
+  }
+`;
+
+export const ContentContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+
+  min-height: 62%;
+  width: 90%;
+  max-width: 50rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+
+  .introduction {
+    text-align: center;
+
+    & > p:first-child {
+      margin-bottom: 2rem;
+    }
+
+    span {
+      color: ${({ theme }) => theme.colors.highlight};
+    }
+  }
+
+  @media(min-width: 390px) {
+    font-size: 1.7rem;
+  }
+
+  @media(min-width: 600px) {
+    font-size: 2rem;
   }
 `;

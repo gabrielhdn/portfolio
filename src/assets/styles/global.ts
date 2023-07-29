@@ -5,13 +5,14 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', 'Poppins', sans-serif;
+    box-sizing: border-box;
     scroll-behavior: smooth;
     overflow-x: hidden;
     transition: background .5s ease-in-out;
   }
 
-  *, ::before, ::after {
-    box-sizing: border-box;
+  svg, ::before, ::after {
+    transition: color .3s ease;
   }
 
   body {

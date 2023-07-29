@@ -6,5 +6,5 @@ export default styled.div`
   right: 0;
   left: 0;
   bottom: 0;
-  z-index: 0;
+  z-index: -1;
 `;

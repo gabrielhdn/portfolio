@@ -4,7 +4,7 @@ interface Props {
   origin: string;
   onClick: () => any;
   children: React.ReactNode;
-  selected: boolean;
+  selected?: boolean;
 }
 
 const Button: React.FC<Props> = ({

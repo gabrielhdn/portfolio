@@ -21,3 +21,15 @@ export const fadeIn = {
     transition: { duration: 1 },
   },
 };
+
+export const arrowOpacity = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 1,
+      ease: 'easeIn',
+      repeat: Infinity,
+    },
+  },
+};

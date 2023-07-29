@@ -2,7 +2,7 @@ import styled, { css, CSSProp } from 'styled-components';
 
 interface IButton {
   origin: string;
-  selected: boolean;
+  selected?: boolean;
 }
 
 interface IOrigins {
@@ -12,17 +12,26 @@ interface IOrigins {
 const origins: IOrigins = {
   header: css`
     span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-    height: 1.5rem;
+      height: 1.5rem;
+      font-weight: 500;
+      font-size: 1rem;
+      position: relative;
+    }
+  `,
+  home: css`
     font-weight: 500;
     font-size: 1rem;
-    position: relative;
-  }
+    min-width: 5.6rem;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: ${({ theme }) => theme.colors.highlight};
+    }
   `,
-  home: css``,
   projects: css`
     border: 1px solid ${({ theme }) => theme.colors.highlight};
     color: ${({ theme }) => theme.colors.highlight};
