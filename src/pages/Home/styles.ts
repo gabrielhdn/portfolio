@@ -44,7 +44,7 @@ export const ContentContainer = styled.div`
   gap: 3rem;
 
   min-height: 62%;
-  max-height: 27.5rem;
+  max-height: 30rem;
   width: 90%;
   max-width: 50rem;
   font-weight: 400;
@@ -56,10 +56,6 @@ export const ContentContainer = styled.div`
 
     & > p:first-child {
       margin-bottom: 2rem;
-    }
-
-    span {
-      color: ${({ theme }) => theme.colors.highlight};
     }
   }
 
@@ -73,5 +69,6 @@ export const ContentContainer = styled.div`
 
   @media(min-width: 1000px) {
     min-height: 59%;
+    max-height: 27.5rem;
   }
 `;

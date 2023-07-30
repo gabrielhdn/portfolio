@@ -7,43 +7,29 @@ interface Props {
   text: string;
 }
 
-const container = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: { duration: 1, staggerChildren: 0.05, delayChildren: 1.5 },
-  },
-};
-
-const child = {
-  hidden: {
-    opacity: 0,
-    y: -200,
-  },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      // type: 'spring',
-      // damping: 12,
-      // stiffness: 100,
-      // type: 'tween',
-      ease: 'easeIn',
-    },
-  },
-};
-
 const AnimatedText = ({ text }: Props) => {
-  // const words = useMemo(() => text.split(' '), [text]);
   const words = text.split(' ');
 
   return (
-    <S.Container variants={container} initial="hidden" animate="visible">
+    <S.Container>
       {words.map((word, wordIndex) => (
         <React.Fragment key={wordIndex}>
           <S.WordWrapper selected={word.includes('gabriel')}>
             {Array.from(word).map((letter, letterIndex) => (
-              <motion.span key={letterIndex} variants={child}>
+              <motion.span
+                key={letterIndex}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 1.2,
+                  type: 'tween',
+                  ease: 'easeInOut',
+                  delay: (1.4 + Math.random() * 0.6),
+                  y: {
+                    duration: 0.4,
+                  },
+                }}
+              >
                 {letter}
               </motion.span>
             ))}

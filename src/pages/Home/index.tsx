@@ -3,6 +3,7 @@ import { IoTriangleSharp } from 'react-icons/io5';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 
+import AnimatedText from '../../components/AnimatedText';
 import BGParticles from '../../components/BGParticles';
 import Switch from '../../components/Switch';
 import Buttons from './components/Buttons';
@@ -17,7 +18,6 @@ import {
 import BlackLogo from '../../assets/images/LogoBlack.svg';
 import WhiteLogo from '../../assets/images/Logo.svg';
 import * as S from './styles';
-// import AnimatedText from '../../components/AnimatedText';
 
 const Home: React.FC = () => {
   const [slideDirection, setSlideDirection] = useState<string>('left');
@@ -83,21 +83,12 @@ const Home: React.FC = () => {
 
       <S.ContentContainer>
         <motion.div
-          variants={slideLeft}
+          variants={slideDirection === 'bottom' ? slideLeft : undefined}
           className="introduction"
         >
-          <p>welcome!</p>
-          <p>
-            i&apos;m
-            {' '}
-            <span>gabriel</span>
-            {' '}
-            herdina,
-          </p>
-          <p>front-end developer based in curitiba, brazil.</p>
-          {/* <AnimatedText text="welcome!" />
+          <AnimatedText text="welcome!" />
           <AnimatedText text="i'm gabriel herdina," />
-          <AnimatedText text="front-end developer based in curitiba, brazil." /> */}
+          <AnimatedText text="front-end developer based in curitiba, brazil." />
         </motion.div>
 
         <IoTriangleSharp
