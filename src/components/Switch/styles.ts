@@ -8,8 +8,9 @@ export const Container = styled.div`
   height: 1.7rem;
   width: 4.2rem;
   background-image: radial-gradient(circle farthest-corner at 10% 20%,
-                    rgba(253,203,50,1) 0%,
-                    rgba(244,56,98,1) 100.2%);
+                    rgba(253,203,50,0.4) 0%,
+                    rgba(244,56,98,0.4) 100.2%);
+
   border-radius: 25px;
   padding: 0 3px;
   transition: all .3s;
@@ -34,9 +35,9 @@ export const Container = styled.div`
 
   ${({ theme }) => theme.title === 'dark' && css`
   background-image: linear-gradient(109.8deg,
-                      rgba(62,5,116,1) -5.2%,
-                      rgba(41,14,151,1) -5.2%,
-                      rgba(216,68,148,1) 103.3%);
+                      rgba(62,5,116,0.4) -5.2%,
+                      rgba(41,14,151,0.4) -5.2%,
+                      rgba(216,68,148,0.4) 103.3%);
   `}
 
   @media(min-width: 1200px) {

@@ -76,9 +76,7 @@ const Home: React.FC = () => {
           className="logo"
         />
 
-        <div className="switch">
-          <Switch />
-        </div>
+        <Switch />
       </header>
 
       <S.ContentContainer>

@@ -75,7 +75,7 @@ export const slideLeft = {
 
 export const slideUp = {
   hidden: {
-    y: window.innerWidth > 1000 ? 200 : 100,
+    y: window.innerWidth > 1000 ? 200 : 50,
     opacity: 0,
   },
   visible: {
