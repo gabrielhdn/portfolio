@@ -5,7 +5,6 @@ export const Container = styled(motion.div)`
   width: 100%;
   min-height: 100vh;
   padding-top: 4.5rem;
-  padding-bottom: 2rem;
 
   .portrait {
     width: 100%;
@@ -23,7 +22,7 @@ export const Container = styled(motion.div)`
 `;
 
 export const Content = styled.div`
-  padding: 2.5rem 1rem;
+  padding: 2.5rem 1.2rem;
 
   section {
     span {
@@ -32,6 +31,14 @@ export const Content = styled.div`
 
     .content-text {
       margin: 2.5rem 0;
+
+      p {
+        color: ${({ theme }) => theme.colors.secondary_text}
+      }
+
+      strong {
+        color: ${({ theme }) => theme.colors.highlight};
+      }
     }
 
     p + p {

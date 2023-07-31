@@ -1,8 +1,8 @@
+import { fadeIn } from '../../utils/animations';
 import Header from '../../components/Header';
 import AnimatedText from '../../components/AnimatedText';
 import portrait from '../../assets/images/profilemedium.jpg';
 import * as S from './styles';
-import { fadeIn } from '../../utils/animations';
 
 function About() {
   return (
@@ -12,8 +12,9 @@ function About() {
       animate="visible"
     >
       <Header />
+
       <div className="portrait">
-        <img src={portrait} alt="" />
+        <img src={portrait} alt="Gabriel Herdina" />
       </div>
 
       <S.Content>
@@ -84,7 +85,9 @@ function About() {
 
             <p>
               Currently, I’m available for future opportunities. If you are interested in my work,
-              feel free to get in touch. See you soon!
+              feel free to get in touch.
+              {' '}
+              <strong>See you soon!</strong>
             </p>
           </div>
         </section>

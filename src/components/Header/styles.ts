@@ -16,6 +16,7 @@ export const Container = styled(motion.header)`
 
   width: 100vw;
   padding: 2rem 4rem;
+  background: ${({ theme }) => `${theme.colors.background}90`};
 
   .menu-icon {
     display: none;
