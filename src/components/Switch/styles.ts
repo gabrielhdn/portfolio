@@ -20,7 +20,7 @@ export const Container = styled.div`
     height: 1.4rem;
     width: 1.4rem;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: rgba(255,255,255,0.9);
     overflow: hidden;
 
     display: flex;

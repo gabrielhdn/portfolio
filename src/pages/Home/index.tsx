@@ -84,9 +84,22 @@ const Home: React.FC = () => {
           variants={slideDirection === 'bottom' ? slideLeft : undefined}
           className="introduction"
         >
-          <AnimatedText text="welcome!" />
-          <AnimatedText text="i'm gabriel herdina," />
-          <AnimatedText text="front-end developer based in curitiba, brazil." />
+          <AnimatedText
+            text="welcome!"
+            delay={1.4}
+            justify="center"
+          />
+          <AnimatedText
+            text="i'm gabriel herdina,"
+            marked="gabriel"
+            delay={1.4}
+            justify="center"
+          />
+          <AnimatedText
+            text="front-end developer based in curitiba, brazil."
+            delay={1.4}
+            justify="center"
+          />
         </motion.div>
 
         <IoTriangleSharp

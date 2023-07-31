@@ -5,16 +5,21 @@ import * as S from './styles';
 
 interface Props {
   text: string;
+  marked?: string;
+  delay: number;
+  justify: string;
 }
 
-const AnimatedText = ({ text }: Props) => {
+const AnimatedText = ({
+  text, marked, delay, justify,
+}: Props) => {
   const words = text.split(' ');
 
   return (
-    <S.Container>
+    <S.Container justify={justify}>
       {words.map((word, wordIndex) => (
         <React.Fragment key={wordIndex}>
-          <S.WordWrapper selected={word.includes('gabriel')}>
+          <S.WordWrapper selected={marked ? word.includes(marked) : false}>
             {Array.from(word).map((letter, letterIndex) => (
               <motion.span
                 key={letterIndex}
@@ -24,7 +29,7 @@ const AnimatedText = ({ text }: Props) => {
                   duration: 1.2,
                   type: 'tween',
                   ease: 'easeInOut',
-                  delay: (1.4 + Math.random() * 0.6),
+                  delay: (delay + Math.random() * 0.6),
                   y: {
                     duration: 0.4,
                   },
@@ -34,6 +39,7 @@ const AnimatedText = ({ text }: Props) => {
               </motion.span>
             ))}
           </S.WordWrapper>
+
           {/* sets spacing after each word but the last one */}
           {wordIndex !== words.length - 1 && <S.Space />}
         </React.Fragment>

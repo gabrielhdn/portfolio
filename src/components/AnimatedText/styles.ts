@@ -1,14 +1,18 @@
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
+interface IContainer {
+  justify: string;
+}
+
 interface IWordWrapper {
   selected: boolean;
 }
 
-export const Container = styled(motion.p)`
+export const Container = styled(motion.span)<IContainer>`
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: ${({ justify }) => justify};
 `;
 
 export const WordWrapper = styled(motion.span)<IWordWrapper>`

@@ -5,6 +5,12 @@ export const Container = styled.div`
   gap: 1.5rem;
   align-items: center;
 
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   svg {
     width: 1.4rem;
     height: 1.4rem;

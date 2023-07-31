@@ -54,7 +54,7 @@ export const ContentContainer = styled.div`
     max-width: 100%;
     text-align: center;
 
-    & > p:first-child {
+    & > span:first-child {
       margin-bottom: 2rem;
     }
   }
