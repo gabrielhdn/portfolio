@@ -94,7 +94,7 @@ export const pageSlideLeft = {
   },
   visible: {
     opacity: 1,
-    transition: { duration: 0.5, delay: 0.3 },
+    transition: { duration: 0.5 },
   },
   exit: {
     x: '100vw',
@@ -108,7 +108,7 @@ export const pageSlideRight = {
   },
   visible: {
     opacity: 1,
-    transition: { duration: 0.5, delay: 0.3 },
+    transition: { duration: 0.5 },
   },
   exit: {
     x: '-100vw',
@@ -122,7 +122,7 @@ export const pageSlideBottom = {
   },
   visible: {
     opacity: 1,
-    transition: { duration: 0.5, delay: 0.3 },
+    transition: { duration: 0.5 },
   },
   exit: {
     y: '-100vh',

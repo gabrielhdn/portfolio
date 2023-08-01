@@ -16,8 +16,53 @@ export const Container = styled(motion.div)`
     }
   }
 
-  @media(min-width: 720px) {
+  @media(min-width: 490px) and (max-width: 1000px) {
+    .portrait {
+      width: min-content;
+      margin: 0 auto;
+      padding: 2rem 0;
+      padding-bottom: 1rem;
+
+      img {
+        width: 12rem;
+        height: 17rem;
+      }
+    }
+  }
+
+
+
+  @media(min-width: 1000px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     padding-top: 5.7rem;
+
+    .portrait {
+      width: 10%;
+      height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        object-fit: cover;
+        width: 12rem;
+        height: auto;
+
+        position: fixed;
+        top: 25%;
+      }
+    }
+  }
+
+  @media(min-width: 1200px) {
+    .portrait {
+      img {
+        width: 16rem;
+      }
+    }
   }
 `;
 
@@ -43,6 +88,48 @@ export const Content = styled.div`
 
     p + p {
       margin-top: 1.5rem;
+    }
+  }
+
+  @media(min-width: 780px) and (max-width: 1000px) {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  @media(min-width: 1000px) {
+    width: 57%;
+    padding: 3rem 0;
+
+    section {
+      span {
+        font-size: 1.6rem;
+      }
+
+      .content-text {
+        margin: 3.8rem 0;
+
+        p {
+          font-size: 1.1rem;
+        }
+      }
+
+      p + p {
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  @media(min-width: 1200px) {
+    section {
+      span {
+        font-size: 1.8rem;
+      }
+
+      .content-text {
+        p {
+          font-size: 1.2rem;
+        }
+      }
     }
   }
 `;
