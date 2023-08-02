@@ -47,24 +47,31 @@ export const ContentContainer = styled.div`
   max-height: 30rem;
   width: 90%;
   max-width: 50rem;
-  font-weight: 400;
-  font-size: 1.5rem;
+
+  h4 {
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
 
   .introduction {
     max-width: 100%;
     text-align: center;
 
-    & > span:first-child {
+    & > h4:first-child {
       margin-bottom: 2rem;
     }
   }
 
   @media(min-width: 390px) {
-    font-size: 1.7rem;
+    h4 {
+      font-size: 1.7rem;
+    }
   }
 
   @media(min-width: 600px) {
-    font-size: 2rem;
+    h4 {
+      font-size: 2rem;
+    }
   }
 
   @media(min-width: 1000px) {

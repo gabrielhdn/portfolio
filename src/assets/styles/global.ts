@@ -27,6 +27,11 @@ export default createGlobalStyle`
     color: ${({ theme }) => theme.colors.primary_text};
     text-decoration: none;
   }
+
+  h4 {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
 `;
 
 export const Github = styled(SiGithub)`

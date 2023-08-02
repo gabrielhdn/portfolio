@@ -9,7 +9,7 @@ interface IWordWrapper {
   selected: boolean;
 }
 
-export const Container = styled(motion.span)<IContainer>`
+export const Container = styled(motion.h4)<IContainer>`
   display: flex;
   flex-wrap: wrap;
   justify-content: ${({ justify }) => justify};

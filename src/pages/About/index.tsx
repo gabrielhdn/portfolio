@@ -1,7 +1,7 @@
 import { pageSlideLeft } from '../../utils/animations';
 import Header from '../../components/Header';
 import AnimatedText from '../../components/AnimatedText';
-import portrait from '../../assets/images/profileoriginal.jpg';
+import portrait from '../../assets/images/portfoliobw.jpg';
 import * as S from './styles';
 
 const About = () => (

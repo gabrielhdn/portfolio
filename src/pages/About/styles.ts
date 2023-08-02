@@ -11,6 +11,7 @@ export const Container = styled(motion.div)`
 
     img {
       object-fit: cover;
+      object-position: 50% 42%;
       width: 100%;
       height: 13rem;
     }
@@ -70,8 +71,8 @@ export const Content = styled.div`
   padding: 2.5rem 1.2rem;
 
   section {
-    span {
-      font-size: 1.5rem;
+    h4 {
+      font-size: 1.6rem;
     }
 
     .content-text {
@@ -101,8 +102,8 @@ export const Content = styled.div`
     padding: 3rem 0;
 
     section {
-      span {
-        font-size: 1.6rem;
+      h4 {
+        font-size: 1.7rem;
       }
 
       .content-text {
@@ -121,7 +122,7 @@ export const Content = styled.div`
 
   @media(min-width: 1200px) {
     section {
-      span {
+      h4 {
         font-size: 1.8rem;
       }
 
