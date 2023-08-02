@@ -2,11 +2,17 @@ import Header from '../../components/Header';
 import SkillSection from './components/SkillSection';
 import Pyramid from '../../components/Pyramid';
 
+import { pageSlideRight } from '../../utils/animations';
 import skills, { sectionMapping, sections } from '../../utils/skills';
 import * as S from './styles';
 
 const Skills = () => (
-  <S.Container>
+  <S.Container
+    variants={pageSlideRight}
+    initial="hidden"
+    animate="visible"
+    exit="exit"
+  >
     <Header />
 
     <S.Content>
