@@ -17,14 +17,16 @@ export const Container = styled.section`
   }
 
   .cards {
-    width: 90%;
-    max-width: 36.5rem;
-    align-self: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    align-self: center;
     gap: 2.5rem;
+
+    width: 90%;
+    max-width: 36.5rem;
+    background: ${({ theme }) => theme.colors.background};
   }
 
   @media(min-width: 420px) {
@@ -36,6 +38,12 @@ export const Container = styled.section`
   @media(min-width: 550px) {
     .cards {
       width: 80%;
+    }
+  }
+
+  @media(min-width: 1000px) {
+    h4 {
+      font-size: 1.8rem;
     }
   }
 `;

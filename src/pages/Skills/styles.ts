@@ -3,6 +3,23 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width: 100%;
   min-height: 100vh;
+  position: relative;
+
+  .pyramid-container {
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    z-index: 5;
+  }
+
+  @media(min-width: 1000px) {
+    .pyramid-container {
+      position: fixed;
+      right: 2rem;
+      bottom: 2rem;
+      z-index: 5;
+    }
+  }
 `;
 
 export const Content = styled.div`

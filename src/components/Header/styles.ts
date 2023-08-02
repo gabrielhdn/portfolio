@@ -8,7 +8,7 @@ interface INavigation {
 export const Container = styled(motion.header)`
   position: fixed;
   top: 0;
-  z-index: 5;
+  z-index: 10;
 
   display: flex;
   justify-content: space-between;
