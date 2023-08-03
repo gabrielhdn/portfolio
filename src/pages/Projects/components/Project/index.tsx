@@ -20,6 +20,8 @@ const Project: React.FC<Props> = ({ project }) => {
   const hoverRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    // const { hoverEffect } = window;
+
     if (hoverRef.current) {
       new hoverEffect({
         parent: hoverRef.current,
@@ -30,8 +32,8 @@ const Project: React.FC<Props> = ({ project }) => {
         angle: Math.PI / 8,
         speedIn: 1,
         speedOut: 1,
-        // imagesRatio: 0.5,
         imagesRatio: 480 / 854,
+        // imagesRatio: 0.5,
       });
     }
   }, [project]);

@@ -38,16 +38,14 @@ export const Text = styled(motion.div)`
 
 export const Image = styled(motion.div)`
   width: 100%;
-  /* max-width: 24.2rem; */
   max-width: 27rem;
-  /* height: 14rem; */
   height: 15rem;
   margin: 4rem auto;
   position: relative;
 
   span {
     position: absolute;
-    right: 5px;
+    right: 10px;
     top: -20px;
     font-size: 0.8rem;
     font-weight: 500;
