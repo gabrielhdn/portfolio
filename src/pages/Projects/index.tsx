@@ -10,8 +10,8 @@ function Projects() {
   return (
     <S.Container
       variants={pageSlideTop}
-      initial="hidden"
-      animate="visible"
+      // initial="hidden"
+      // animate="visible"
       exit="exit"
     >
       <Header />

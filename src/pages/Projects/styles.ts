@@ -26,7 +26,6 @@ export const Container = styled(motion.div)`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 5rem;
 
   width: 90%;
   margin: 0 auto;

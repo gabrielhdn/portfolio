@@ -107,7 +107,7 @@ const projects: IProject[] = [
     id: '_ 05',
     name: 'MY CONTACTS',
     description: [
-      'Codewise, MyContacts is my most complete application so far. It\'s a fullstack project that offers a space for the user to build his own permanent contact list - keeping track of names, e-mails, phones and relationship categories. Besides adding new contacts, the user can edit and remove them. The integrity of the data is assured by a back-end built with Express.js and PostgreSQL.',
+      'Codewise, MyContacts is my most complete application so far. It\'s a full-stack project that offers a space for the user to build his own permanent contact list - keeping track of names, e-mails, phones and relationship categories. Besides adding new contacts, the user can edit and remove them. The integrity of the data is assured by a back-end built with Express.js and PostgreSQL.',
       'The front-end might look simple, but it actually uses a diversity of tools and design patterns to make the code efficient, clean and scalable. The app has functionalities, for example, to control toasts through event emitters, transform information with data mappers and manage errors and animations with various custom hooks. Responsive and made with Styled Components.',
       'To run properly, this project requires you to initialize the PostgreSQL database beforehand. Instructions are available in the repository.',
     ],

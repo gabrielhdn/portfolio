@@ -24,8 +24,7 @@ const Home: React.FC = () => {
   const containerRef = useMobileHeightFix('height');
   const navigate = useNavigate();
 
-  const { theme } = useTheme();
-  const { title } = theme;
+  const { theme: { title } } = useTheme();
 
   const handleClick = (direction: string, path: string) => {
     switch (direction) {

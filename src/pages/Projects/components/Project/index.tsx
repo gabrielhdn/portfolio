@@ -7,8 +7,9 @@ import hoverEffect from 'hover-effect';
 
 import AnimatedText from '../../../../components/AnimatedText';
 import Button from '../../../../components/Button';
-import { IProject } from '../../../../utils/projects';
 
+import { IProject } from '../../../../utils/projects';
+import { slideLeftImediate, slideRightImediate } from '../../../../utils/animations';
 import * as S from './styles';
 
 interface Props {
@@ -29,14 +30,19 @@ const Project: React.FC<Props> = ({ project }) => {
         angle: Math.PI / 8,
         speedIn: 1,
         speedOut: 1,
-        imagesRatio: 0.5,
+        // imagesRatio: 0.5,
+        imagesRatio: 480 / 854,
       });
     }
   }, [project]);
 
   return (
     <S.Container>
-      <S.Text>
+      <S.Text
+        variants={slideLeftImediate}
+        initial="hidden"
+        whileInView="visible"
+      >
         <span className="index">{project.id}</span>
         <AnimatedText text={project.name} delay={0.5} justify="flex-start" />
 
@@ -59,7 +65,12 @@ const Project: React.FC<Props> = ({ project }) => {
         </div>
       </S.Text>
 
-      <S.Image ref={hoverRef} />
+      <S.Image
+        ref={hoverRef}
+        variants={slideRightImediate}
+        initial="hidden"
+        whileInView="visible"
+      />
     </S.Container>
   );
 };

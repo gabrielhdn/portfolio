@@ -73,6 +73,49 @@ export const slideLeft = {
   },
 };
 
+export const slideLeftImediate = {
+  hidden: {
+    x: window.innerWidth > 1000 ? -200 : -100,
+    opacity: 0,
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.8,
+    },
+  },
+};
+
+export const slideRight = {
+  hidden: {
+    x: window.innerWidth > 1000 ? 200 : 100,
+    opacity: 0,
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.8,
+      delay: 0.5,
+    },
+  },
+};
+
+export const slideRightImediate = {
+  hidden: {
+    x: window.innerWidth > 1000 ? 200 : 100,
+    opacity: 0,
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.8,
+    },
+  },
+};
+
 export const slideUp = {
   hidden: {
     y: window.innerWidth > 1000 ? 200 : 50,

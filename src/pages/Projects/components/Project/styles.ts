@@ -5,7 +5,6 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
 `;
 
 export const Text = styled(motion.div)`
@@ -29,6 +28,7 @@ export const Text = styled(motion.div)`
   }
 
   .buttons {
+    margin-bottom: 0;
     display: flex;
     gap: 1.5rem;
   }
@@ -36,5 +36,7 @@ export const Text = styled(motion.div)`
 
 export const Image = styled(motion.div)`
   width: 100%;
-  height: 11rem;
+  max-width: 24.2rem;
+  height: 14rem;
+  margin: 4rem auto;
 `;
