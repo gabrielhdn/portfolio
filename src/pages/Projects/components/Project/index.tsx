@@ -70,7 +70,9 @@ const Project: React.FC<Props> = ({ project }) => {
         variants={slideRightImediate}
         initial="hidden"
         whileInView="visible"
-      />
+      >
+        {project.id.includes('1') && <span>touch it!</span>}
+      </S.Image>
     </S.Container>
   );
 };
