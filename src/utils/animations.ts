@@ -129,3 +129,17 @@ export const pageSlideBottom = {
     transition: { ease: 'easeInOut' },
   },
 };
+
+export const pageSlideTop = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: { duration: 0.5 },
+  },
+  exit: {
+    y: '100vh',
+    transition: { ease: 'easeInOut' },
+  },
+};

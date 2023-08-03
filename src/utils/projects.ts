@@ -19,7 +19,7 @@ import {
   waves,
 } from '../assets/images/displacement';
 
-interface IProject {
+export interface IProject {
   id: string;
   name: string;
   description: string[];
@@ -36,7 +36,7 @@ interface IProject {
 
 const projects: IProject[] = [
   {
-    id: '01_',
+    id: '_ 01',
     name: 'HERDZ BEATS',
     description: [
       'HerdzBeats is a music application that uses Apple\'s API to search for artists and albums from all around the world. It provides audio previews and features to save tracks as favorites and edit user profiles. The data is persisted through local storage.',
@@ -53,7 +53,7 @@ const projects: IProject[] = [
     },
   },
   {
-    id: '02_',
+    id: '_ 02',
     name: 'ASSASSIN\'S TRUNFO',
     description: [
       'Assassin\'s Trunfo was the first project I built using state manipulation in React.js, right when I started learning the library. The idea was to create a deck of cards based on the classic game "top trumps". For that, I chose the Assassin\'s Creed theme.',
@@ -70,7 +70,7 @@ const projects: IProject[] = [
     },
   },
   {
-    id: '03_',
+    id: '_ 03',
     name: 'CYBER TRIVIA',
     description: [
       'Cyberpunk is a genre defined by the fusion of references from the last century with technological dystopias. Hence the idea of CyberTrivia, a quiz game inspired by the 80\'s visuals - precisely when trivia boards became popular worldwide.',
@@ -87,7 +87,7 @@ const projects: IProject[] = [
     },
   },
   {
-    id: '04_',
+    id: '_ 04',
     name: 'MY WALLET',
     description: [
       'MyWallet is an expense tracking application created with React.js and Redux. The idea is to maintain an online wallet with comprehensive monitoring: amount, description, payment method and expense type.',
@@ -104,7 +104,7 @@ const projects: IProject[] = [
     },
   },
   {
-    id: '05_',
+    id: '_ 05',
     name: 'MY CONTACTS',
     description: [
       'Codewise, MyContacts is my most complete application so far. It\'s a fullstack project that offers a space for the user to build his own permanent contact list - keeping track of names, e-mails, phones and relationship categories. Besides adding new contacts, the user can edit and remove them. The integrity of the data is assured by a back-end built with Express.js and PostgreSQL.',

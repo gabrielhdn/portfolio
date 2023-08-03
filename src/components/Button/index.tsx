@@ -2,7 +2,7 @@ import * as S from './styles';
 
 interface Props {
   origin: string;
-  onClick: () => any;
+  onClick?: () => any;
   children: React.ReactNode;
   selected?: boolean;
 }
