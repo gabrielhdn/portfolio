@@ -18,6 +18,8 @@ export const Container = styled(motion.div)`
   }
 
   @media(min-width: 490px) and (max-width: 1000px) {
+    padding-top: 7rem;
+
     .portrait {
       width: min-content;
       margin: 0 auto;
@@ -31,16 +33,13 @@ export const Container = styled(motion.div)`
     }
   }
 
-
-
   @media(min-width: 1000px) {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    padding-top: 5.7rem;
+    padding-top: 5rem;
 
     .portrait {
-      width: 10%;
+      width: 30%;
       height: 100vh;
 
       display: flex;
@@ -98,7 +97,7 @@ export const Content = styled.div`
   }
 
   @media(min-width: 1000px) {
-    width: 57%;
+    width: 62%;
     padding: 3rem 0;
 
     section {
