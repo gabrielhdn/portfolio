@@ -141,7 +141,8 @@ export const pageSlideLeft = {
   },
   exit: {
     x: '100vw',
-    transition: { ease: 'easeInOut' },
+    opacity: 0,
+    transition: { ease: 'easeInOut', duration: 0.8, opacity: { duration: 0.8 } },
   },
 };
 
@@ -155,7 +156,8 @@ export const pageSlideRight = {
   },
   exit: {
     x: '-100vw',
-    transition: { ease: 'easeInOut' },
+    opacity: 0,
+    transition: { ease: 'easeInOut', duration: 0.8, opacity: { duration: 0.8 } },
   },
 };
 
@@ -169,7 +171,8 @@ export const pageSlideBottom = {
   },
   exit: {
     y: '-100vh',
-    transition: { ease: 'easeInOut' },
+    opacity: 0,
+    transition: { ease: 'easeInOut', duration: 0.8, opacity: { duration: 0.8 } },
   },
 };
 
@@ -183,6 +186,7 @@ export const pageSlideTop = {
   },
   exit: {
     y: '100vh',
-    transition: { ease: 'easeInOut' },
+    opacity: 0,
+    transition: { ease: 'easeInOut', duration: 0.8, opacity: { duration: 0.8 } },
   },
 };
