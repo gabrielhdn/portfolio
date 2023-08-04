@@ -31,6 +31,7 @@ export const Container = styled(motion.div)`
     position: relative;
     overflow: hidden;
     padding-bottom: 1rem;
+    font-size: 1.1rem;
     width: 6.5rem;
 
     display: flex;

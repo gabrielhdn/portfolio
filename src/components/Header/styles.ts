@@ -25,11 +25,11 @@ export const Container = styled(motion.header)`
     cursor: pointer;
   }
 
-  @media(max-width: 1000px) {
+  @media(max-width: 1150px) {
     padding: 2rem 2rem;
   }
 
-  @media(max-width: 720px) {
+  @media(max-width: 870px) {
     padding: 1.5rem 1.5rem;
 
     .menu-icon {
@@ -47,10 +47,14 @@ export const Navigation = styled.nav<INavigation>`
   .link-container {
     display: flex;
     gap: 2rem;
+
+    span {
+      font-size: 1rem;
+    }
   }
 
-  @media(max-width: 1000px) {
-    gap: 4rem;
+  @media(max-width: 1150px) {
+    gap: 3rem;
 
     .link-container {
       gap: 1.5rem;
@@ -58,7 +62,7 @@ export const Navigation = styled.nav<INavigation>`
   }
 
 
-  @media(max-width: 720px) {
+  @media(max-width: 870px) {
     position: fixed;
     inset: 0 0 0 25%;
 

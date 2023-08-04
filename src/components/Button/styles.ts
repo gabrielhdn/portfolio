@@ -18,13 +18,11 @@ const origins: IOrigins = {
 
       height: 1.5rem;
       font-weight: 500;
-      font-size: 1rem;
       position: relative;
     }
   `,
   home: css`
     font-weight: 500;
-    font-size: 1rem;
     min-width: 5.6rem;
     transition: color 0.3s ease;
 
