@@ -43,7 +43,7 @@ const Project: React.FC<Props> = ({ project }) => {
           speedOut: 1,
           imagesRatio: 480 / 854,
         });
-      }, 1005);
+      }, 1050);
     }
 
     return () => {
