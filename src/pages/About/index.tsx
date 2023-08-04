@@ -18,8 +18,6 @@ const About = () => (
       <motion.img
         src={portrait}
         alt="Gabriel Herdina"
-        // exit={{ y: 0 }}
-        // transition={{ duration: 0 }}
       />
     </div>
 
@@ -28,7 +26,7 @@ const About = () => (
         <AnimatedText
           text="_ WHO AM I?"
           marked="_"
-          delay={0.5}
+          delay={0}
           justify="flex-start"
         />
 

@@ -26,7 +26,7 @@ const Project: React.FC<Props> = ({ project }) => {
 
     const timeoutOne = setTimeout(() => {
       setIsLoading(false);
-    }, 1000);
+    }, 1100);
 
     let timeoutTwo: number;
 
@@ -43,7 +43,7 @@ const Project: React.FC<Props> = ({ project }) => {
           speedOut: 1,
           imagesRatio: 480 / 854,
         });
-      }, 1050);
+      }, 1150);
     }
 
     return () => {

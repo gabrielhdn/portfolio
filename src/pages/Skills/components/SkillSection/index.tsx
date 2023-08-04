@@ -12,7 +12,7 @@ const SkillSection: React.FC<Props> = ({ skills, title }) => (
     <AnimatedText
       text={`_ ${title}`}
       marked="_"
-      delay={0.5}
+      delay={0}
       justify="flex-start"
     />
 
