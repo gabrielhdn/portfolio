@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { pageSlideLeft } from '../../utils/animations';
 import Header from '../../components/Header';
 import AnimatedText from '../../components/AnimatedText';
@@ -14,7 +15,12 @@ const About = () => (
     <Header />
 
     <div className="portrait">
-      <img src={portrait} alt="Gabriel Herdina" />
+      <motion.img
+        src={portrait}
+        alt="Gabriel Herdina"
+        // exit={{ y: 0 }}
+        // transition={{ duration: 0 }}
+      />
     </div>
 
     <S.Content>

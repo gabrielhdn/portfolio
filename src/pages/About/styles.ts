@@ -46,13 +46,14 @@ export const Container = styled(motion.div)`
       justify-content: center;
       align-items: center;
 
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+
       img {
-        object-fit: cover;
         width: 12rem;
         height: auto;
-
-        position: fixed;
-        top: 25%;
       }
     }
   }
@@ -99,6 +100,7 @@ export const Content = styled.div`
   @media(min-width: 1000px) {
     width: 62%;
     padding: 3rem 0;
+    margin-left: 30%;
 
     section {
       h4 {
