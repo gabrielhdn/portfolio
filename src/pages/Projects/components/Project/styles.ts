@@ -34,6 +34,40 @@ export const Text = styled(motion.div)`
     display: flex;
     gap: 1.5rem;
   }
+
+  @media(min-width: 870px) {
+    .index, h4 {
+      font-size: 1.7rem;
+    }
+
+    h4 {
+      margin: 2.5rem 0;
+    }
+
+    p {
+      width: 70%;
+      font-size: 1.1rem;
+    }
+
+    p + p {
+      margin-top: 2rem;
+    }
+
+    .buttons {
+      margin-top: 2.5rem;
+    }
+  }
+
+  @media(min-width: 1200px) {
+    .index, h4 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      width: 60%;
+      font-size: 1.2rem;
+    }
+  }
 `;
 
 export const Image = styled(motion.div)`
@@ -50,5 +84,21 @@ export const Image = styled(motion.div)`
     font-size: 0.8rem;
     font-weight: 500;
     opacity: 0.2;
+  }
+
+  @media(min-width: 870px) {
+    max-width: none;
+    width: 40rem;
+    height: 23rem;
+
+    span {
+      top: -22px;
+      font-size: 0.9rem;
+    }
+  }
+
+  @media(min-width: 1200px) {
+    width: 48rem;
+    height: 28rem;
   }
 `;

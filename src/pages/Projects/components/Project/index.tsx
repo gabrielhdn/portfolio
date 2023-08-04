@@ -22,7 +22,7 @@ const Project: React.FC<Props> = ({ project }) => {
   const hoverRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // these timeouts avoid hover-effect lagging other animations (framer-motion and spinner)
+    // sets "new hoverEffect" to happen after the animations, otherwise it'll bug them
 
     const timeoutOne = setTimeout(() => {
       setIsLoading(false);
