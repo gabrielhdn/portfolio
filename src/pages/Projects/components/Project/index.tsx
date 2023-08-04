@@ -1,12 +1,13 @@
 /* eslint-disable new-cap */
 /* eslint-disable no-new */
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import hoverEffect from 'hover-effect';
 
 import AnimatedText from '../../../../components/AnimatedText';
 import Button from '../../../../components/Button';
+import Loader from '../../../../components/Loader';
 
 import { IProject } from '../../../../utils/projects';
 import { slideLeftImediate, slideRightImediate } from '../../../../utils/animations';
@@ -17,25 +18,38 @@ interface Props {
 }
 
 const Project: React.FC<Props> = ({ project }) => {
+  const [isLoading, setIsLoading] = useState<boolean>(true);
   const hoverRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // const { hoverEffect } = window;
+    // these timeouts avoid hover-effect lagging other animations (framer-motion and spinner)
+
+    const timeoutOne = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+
+    let timeoutTwo: number;
 
     if (hoverRef.current) {
-      new hoverEffect({
-        parent: hoverRef.current,
-        intensity: 0.4,
-        image1: project.images.one,
-        image2: project.images.two,
-        displacementImage: project.images.displacement,
-        angle: Math.PI / 8,
-        speedIn: 1,
-        speedOut: 1,
-        imagesRatio: 480 / 854,
-        // imagesRatio: 0.5,
-      });
+      timeoutTwo = setTimeout(() => {
+        new hoverEffect({
+          parent: hoverRef.current,
+          intensity: 0.4,
+          image1: project.images.one,
+          image2: project.images.two,
+          displacementImage: project.images.displacement,
+          angle: Math.PI / 8,
+          speedIn: 1,
+          speedOut: 1,
+          imagesRatio: 480 / 854,
+        });
+      }, 1010);
     }
+
+    return () => {
+      clearTimeout(timeoutOne);
+      clearTimeout(timeoutTwo);
+    };
   }, [project]);
 
   return (
@@ -46,7 +60,7 @@ const Project: React.FC<Props> = ({ project }) => {
         whileInView="visible"
       >
         <span className="index">{project.id}</span>
-        <AnimatedText text={project.name} delay={0.5} justify="flex-start" />
+        <AnimatedText text={project.name} delay={0} justify="flex-start" />
 
         <div className="description">
           {project.description.map((paragraph) => (
@@ -60,9 +74,9 @@ const Project: React.FC<Props> = ({ project }) => {
           </Link>
 
           {project.urls.app && (
-            <Link to={project.urls.app} target="_blank">
-              <Button origin="projects">APP</Button>
-            </Link>
+          <Link to={project.urls.app} target="_blank">
+            <Button origin="projects">APP</Button>
+          </Link>
           )}
         </div>
       </S.Text>
@@ -74,6 +88,7 @@ const Project: React.FC<Props> = ({ project }) => {
         whileInView="visible"
       >
         {project.id.includes('1') && <span>touch it!</span>}
+        <Loader isLoading={isLoading} />
       </S.Image>
     </S.Container>
   );

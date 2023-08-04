@@ -1,17 +1,16 @@
 import styled from 'styled-components';
 
 export const Overlay = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-
-  width: 100%;
-  height: 100%;
-  background: ${({ theme }) => `${theme.colors.background}70`};
-  backdrop-filter: blur(3px);
+  position: absolute;
+  inset: 0;
+  z-index: 100;
 
   display: flex;
   align-items: center;
   justify-content: center;
+
+  img {
+    width: 7rem;
+    height: 7rem;
+  }
 `;

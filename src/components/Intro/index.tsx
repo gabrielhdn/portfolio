@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import gif from '../../assets/gifs/intro.gif';
+import gif from '../../assets/animations/intro.gif';
 import * as S from './styles';
 import useMobileHeightFix from '../../hooks/useMobileHeightFix';
 

@@ -1,4 +1,1 @@
-declare module 'hover-effect' {
-  const hoverEffect: any;
-  export = hoverEffect;
-}
+declare module 'hover-effect';

@@ -45,7 +45,7 @@ export const Image = styled(motion.div)`
 
   span {
     position: absolute;
-    right: 10px;
+    right: 5px;
     top: -20px;
     font-size: 0.8rem;
     font-weight: 500;
