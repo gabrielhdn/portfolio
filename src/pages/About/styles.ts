@@ -17,6 +17,13 @@ export const Container = styled(motion.div)`
     }
   }
 
+  .pyramid-container {
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    z-index: 5;
+  }
+
   @media(min-width: 490px) and (max-width: 1000px) {
     padding-top: 7rem;
 
@@ -55,6 +62,13 @@ export const Container = styled(motion.div)`
         width: 12rem;
         height: auto;
       }
+
+      .pyramid-container {
+      position: fixed;
+      right: 2rem;
+      bottom: 2rem;
+      z-index: 5;
+    }
     }
   }
 

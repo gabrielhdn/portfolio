@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion';
 import { pageSlideLeft } from '../../utils/animations';
+
 import Header from '../../components/Header';
+import Pyramid from '../../components/Pyramid';
 import AnimatedText from '../../components/AnimatedText';
+
 import portrait from '../../assets/images/portfoliobw.jpg';
 import * as S from './styles';
 
@@ -96,6 +99,10 @@ const About = () => (
         </div>
       </section>
     </S.Content>
+
+    <div className="pyramid-container">
+      <Pyramid />
+    </div>
   </S.Container>
 );
 
