@@ -9,12 +9,12 @@ declare module 'styled-components' {
     title: string;
     colors: {
       background: string;
-      content_background: string;
       card_background: string;
       nav_background: string;
       primary_text: string;
       secondary_text: string;
       highlight: string;
+      scroll: string;
     };
   }
 }
