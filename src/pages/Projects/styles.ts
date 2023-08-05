@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 export const Container = styled(motion.div)`
   width: 100%;
   min-height: 100vh;
+  padding-bottom: 5rem;
   position: relative;
 
   .pyramid-container {

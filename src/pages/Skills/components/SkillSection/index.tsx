@@ -25,6 +25,7 @@ const SkillSection: React.FC<Props> = ({ skills, title }) => (
           tiltReverse
           transitionSpeed={350}
           color={color}
+          perspective={800}
         >
           <Icon className="icon" />
           {id === 1 && <S.TouchIcon size={20} />}

@@ -1,6 +1,7 @@
 import Header from '../../components/Header';
 import SkillSection from './components/SkillSection';
 import Pyramid from '../../components/Pyramid';
+import Footer from '../../components/Footer';
 
 import { pageSlideRight } from '../../utils/animations';
 import skills, { sectionMapping, sections } from '../../utils/skills';
@@ -24,6 +25,8 @@ const Skills = () => (
         />
       ))}
     </S.Content>
+
+    <Footer />
 
     <div className="pyramid-container">
       <Pyramid />

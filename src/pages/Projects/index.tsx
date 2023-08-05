@@ -1,4 +1,5 @@
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import Project from './components/Project';
 import Pyramid from '../../components/Pyramid';
 
@@ -21,6 +22,8 @@ const Projects = () => (
         />
       ))}
     </S.Content>
+
+    <Footer />
 
     <div className="pyramid-container">
       <Pyramid />

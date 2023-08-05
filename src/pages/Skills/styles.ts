@@ -31,7 +31,7 @@ export const Content = styled.div`
   width: 90%;
   margin: 0 auto;
   padding-top: 7rem;
-  padding-bottom: 4rem;
+  padding-bottom: 13rem;
 
   @media(min-width: 720px) {
     padding-top: 8.5rem;
