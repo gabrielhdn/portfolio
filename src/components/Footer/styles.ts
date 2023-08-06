@@ -8,7 +8,7 @@ export const Container = styled.footer`
 
   position: absolute;
   bottom: 0;
-  z-index: 9999;
+  z-index: 8;
 
   .content {
     margin: 0 auto;

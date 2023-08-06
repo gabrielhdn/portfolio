@@ -16,10 +16,8 @@ export const Container = styled(motion.div)`
 
   @media(min-width: 1000px) {
     .pyramid-container {
-      position: fixed;
       right: 2rem;
       bottom: 2rem;
-      z-index: 5;
     }
   }
 `;
