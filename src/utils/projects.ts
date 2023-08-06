@@ -117,8 +117,8 @@ const projects: IProject[] = [
       displacement: plasma,
     },
     urls: {
-      code: 'https://github.com/gabrielhdn',
-      app: 'https://github.com/gabrielhdn',
+      code: 'https://github.com/gabrielhdn/my-contacts-API',
+      app: 'https://gabrielhdn.github.io/my-contacts/',
     },
   },
 ];
