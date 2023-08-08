@@ -1,5 +1,14 @@
 import { motion } from 'framer-motion';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
 
 export const Container = styled(motion.div)`
   position: relative;
@@ -32,6 +41,17 @@ export const Container = styled(motion.div)`
 
     @media(min-width: 1000px) {
       width: 10rem;
+    }
+  }
+
+  @media(min-width: 720px) and (max-width: 1000px) {
+    &::after {
+      content: 'ENABLE BROWSER HARDWARE ACCELERATION FOR A BETTER EXPERIENCE';
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: ${({ theme }) => `${theme.colors.primary_text}50`};
+      position: absolute;
+      bottom: 1rem;
     }
   }
 `;
@@ -75,7 +95,27 @@ export const ContentContainer = styled.div`
   }
 
   @media(min-width: 1000px) {
-    min-height: 59%;
+    min-height: 62%;
     max-height: 27.5rem;
+
+    .introduction {
+      position: relative;
+
+      &::after {
+        content: 'ENABLE BROWSER HARDWARE ACCELERATION FOR A BETTER EXPERIENCE';
+        width: 90%;
+        font-size: 0.85rem;
+        font-weight: 500;
+        color: ${({ theme }) => `${theme.colors.primary_text}50`};
+        opacity: 0;
+
+        position: absolute;
+        bottom: -2.7rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        animation: ${fadeIn} 1s ease-in-out 1.4s forwards;
+      }
+    }
   }
 `;
