@@ -11,7 +11,7 @@ const Footer = () => (
       <span>
         <Link to="https://github.com/gabrielhdn/portfolio">Portfolio</Link>
         {' '}
-        created with React, Typescript, Styled Components and Framer Motion.
+        created with React, TypeScript, Styled Components and Framer Motion.
       </span>
     </div>
   </Container>
