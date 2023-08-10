@@ -50,7 +50,7 @@ const About = () => (
         <AnimatedText
           text="_ TECH EXPERIENCE"
           marked="_"
-          delay={0.5}
+          delay={0}
           justify="flex-start"
         />
 
@@ -76,7 +76,7 @@ const About = () => (
         <AnimatedText
           text="_ INTERESTS"
           marked="_"
-          delay={0.5}
+          delay={0}
           justify="flex-start"
         />
 
