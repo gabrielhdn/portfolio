@@ -20,7 +20,16 @@ const Router = () => {
   if (!routes) return null;
 
   return (
-    <AnimatePresence mode="wait">
+    <AnimatePresence
+      mode="wait"
+      onExitComplete={() => {
+        document.documentElement.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: 'instant',
+        });
+      }}
+    >
       {cloneElement(routes, { key: pathname })}
     </AnimatePresence>
   );
